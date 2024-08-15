@@ -1,0 +1,114 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg{
+    background-color: orange;
+    font-family: "Poppins", sans-serif;
+}
+.banner{
+    width: 100%;
+    height:calc(100vh - 56px);
+    display: grid;
+    place-items: center;
+}
+.content{
+  padding: 20px;
+  color: black;
+}
+.intro{
+  padding: 20px;
+}
+.intro h1{
+  text-align: left;
+  margin-bottom: 20px;
+}
+.intro p{
+  text-align: justify;
+  line-height: 1.75;
+}
+.img-content{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.img-content img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width:990px){
+  .banner{
+    height: auto;
+}
+}
+.heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading h2{
+  width: max-content;
+  background-color: black;
+  color:white;
+  padding: 10px;
+}
+.do-content{
+  margin: 50px 0 100px 0;
+  text-align: justify;
+}
+.do-content.reverse {
+  flex-direction: row-reverse;
+}
+.our-content{
+  padding: 10px;
+}
+.card {
+  border:none !important;
+  box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.1);
+}
+.package{
+  background-color: rgb(250, 250, 250) !important;
+}
+.package h3{
+  margin-bottom: 20px;
+}
+.package p{
+  border-bottom: 1px solid rgba(128, 128, 128, 0.329);
+  line-height: 1.7;
+  font-weight: 400;
+}
+.package h4{
+  margin: 10px 0;
+}
+.projects{
+  background-color: rgb(255, 255, 255) !important;
+  box-shadow: none;
+}
+.fixed-height-img {
+  height: 100px;
+  object-fit: cover;
+  width: 100px;
+}
+.footer{
+  background-color: rgba(0, 0, 0, 0.884);
+}
+.list-items{
+  background-color: rgb(49, 49, 49) !important;
+  margin: 10px;
+  border: none !important;
+  border-radius: 0 !important;
+}
+.list-items a{
+  color: orange !important;
+}
+@media (max-width: 767px) {
+  .do-content, .do-content.reverse {
+      flex-direction: column;
+  }
+}
